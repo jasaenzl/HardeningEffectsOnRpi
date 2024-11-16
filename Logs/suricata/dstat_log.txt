@@ -1,0 +1,13 @@
+----total-usage---- -dsk/total- ------memory-usage----- -net/total-
+usr sys idl wai stl| read  writ| used  free  buf   cach| recv  send
+                   |           | 202M  229M   31M  417M|           
+  1   0  96   1   0|   0    73k| 203M  228M   31M  417M| 145B    0 
+  1   1  95   1   0|   0    73k| 203M  228M   31M  417M| 175B    0 
+  1   1  95   1   0|   0    73k| 203M  228M   31M  417M|  58B    0 
+  1   1  95   1   0|   0    92k| 203M  227M   31M  417M|   0     0 
+  1   1  95   1   0|   0    73k| 203M  227M   31M  417M| 654B  205B
+  1   0  92   4   0|   0   106k| 203M  227M   31M  417M|  87B    0 
+  1   1  96   1   0| 410B   73k| 203M  227M   31M  417M|  29B    0 
+  1   1  95   1   0|   0    72k| 203M  227M   31M  417M|  58B    0 
+  1   0  95   1   0|   0    78k| 203M  227M   32M  417M|   0     0 
+  1   1  92   4   0|   0   106k| 204M  226M   32M  417M|  29B    0 

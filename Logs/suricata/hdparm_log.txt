@@ -1,0 +1,52 @@
+Iniciando prueba de disco con hdparm...
+Prueba 1:
+
+/dev/mmcblk0:
+ Timing cached reads:   1210 MB in  2.00 seconds = 604.92 MB/sec
+ Timing buffered disk reads:  60 MB in  3.02 seconds =  19.88 MB/sec
+Prueba 2:
+
+/dev/mmcblk0:
+ Timing cached reads:   1248 MB in  2.00 seconds = 624.10 MB/sec
+ Timing buffered disk reads:  60 MB in  3.02 seconds =  19.89 MB/sec
+Prueba 3:
+
+/dev/mmcblk0:
+ Timing cached reads:   1258 MB in  2.00 seconds = 629.25 MB/sec
+ Timing buffered disk reads:  62 MB in  3.08 seconds =  20.12 MB/sec
+Prueba 4:
+
+/dev/mmcblk0:
+ Timing cached reads:   1252 MB in  2.00 seconds = 625.57 MB/sec
+ Timing buffered disk reads:  62 MB in  3.11 seconds =  19.93 MB/sec
+Prueba 5:
+
+/dev/mmcblk0:
+ Timing cached reads:   1256 MB in  2.00 seconds = 627.40 MB/sec
+ Timing buffered disk reads:  60 MB in  3.03 seconds =  19.82 MB/sec
+Prueba 6:
+
+/dev/mmcblk0:
+ Timing cached reads:   1254 MB in  2.00 seconds = 627.22 MB/sec
+ Timing buffered disk reads:  62 MB in  3.07 seconds =  20.17 MB/sec
+Prueba 7:
+
+/dev/mmcblk0:
+ Timing cached reads:   1266 MB in  2.00 seconds = 632.50 MB/sec
+ Timing buffered disk reads:  64 MB in  3.01 seconds =  21.24 MB/sec
+Prueba 8:
+
+/dev/mmcblk0:
+ Timing cached reads:   1262 MB in  2.00 seconds = 631.17 MB/sec
+ Timing buffered disk reads:  60 MB in  3.00 seconds =  19.99 MB/sec
+Prueba 9:
+
+/dev/mmcblk0:
+ Timing cached reads:   1262 MB in  2.00 seconds = 631.14 MB/sec
+ Timing buffered disk reads:  62 MB in  3.10 seconds =  20.02 MB/sec
+Prueba 10:
+
+/dev/mmcblk0:
+ Timing cached reads:   1220 MB in  2.00 seconds = 609.53 MB/sec
+ Timing buffered disk reads:  60 MB in  3.07 seconds =  19.52 MB/sec
+Prueba de disco finalizada.

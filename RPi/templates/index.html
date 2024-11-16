@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos del Arduino</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@0.1.1"></script>
+    <style>
+        #chart-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        #chart {
+            width: 1000px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Datos del Arduino</h1>
+    <div id="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <script>
+        let chart;
+
+        async function fetchData() {
+            const response = await fetch('/data');
+            const data = await response.json();
+            return data;
+        }
+
+        function createOrUpdateChart(data) {
+            const ctx = document.getElementById('chart').getContext('2d');
+            const timestamps = data.map(row => row[0]);
+            const values = data.map(row => row[1]);
+
+            if (chart) {
+                chart.data.labels = timestamps;
+                chart.data.datasets[0].data = values;
+                chart.update();
+            } else {
+                chart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: timestamps,
+                        datasets: [{
+                            label: 'Valor ADC',
+                            data: values,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            xAxes: [{
+                                type: 'time',
+                                time: {
+                                    unit: 'second'
+                                }
+                            }],
+                            yAxes: [{
+                                ticks: {
+                                    min: 0,
+                                    max: 255
+                                }
+                            }]
+                        },
+                        responsive: false,
+                        maintainAspectRatio: false
+                    }
+                });
+            }
+        }
+
+        async function updateChart() {
+            const data = await fetchData();
+            createOrUpdateChart(data);
+        }
+
+        // Actualiza cada segundo para obtener los últimos datos
+        setInterval(updateChart, 1000);
+
+        // Inicializa la gráfica con los primeros datos
+        updateChart();
+    </script>
+</body>
+</html>

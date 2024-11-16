@@ -1,0 +1,16 @@
+Iniciando monitoreo de I/O de disco con iostat...
+Linux 6.6.51+rpt-rpi-v8 (EmbSecTest) 	01/11/24 	_aarch64_	(4 CPU)
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+mmcblk0          2.28    334.48     1.37  37.57   16.82   146.57    2.40     56.94     1.90  44.17  233.52    23.73    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.60   7.38
+
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+mmcblk0          0.00      0.00     0.00   0.00    0.00     0.00    9.80     92.80     9.80  50.00    7.47     9.47    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.07   3.28
+
+
+Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
+mmcblk0          0.00      0.00     0.00   0.00    0.00     0.00    8.80     80.00     8.20  48.24    5.61     9.09    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.05   2.64
+
+
+Monitoreo de I/O de disco finalizado.
