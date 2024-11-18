@@ -2,17 +2,14 @@ Iniciando monitoreo de I/O de disco con iostat...
 Linux 6.6.51+rpt-rpi-v8 (EmbSecTest) 	07/11/24 	_aarch64_	(4 CPU)
 
 Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
-dm-0             0.04      0.55     0.00   0.00   16.77    15.14    3.50     16.81     0.00   0.00   56.64     4.80    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.20   5.53
 mmcblk0         41.22   1253.96     3.11   7.02    3.42    30.42    4.23     46.91     2.89  40.57  318.59    11.09    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    1.49  15.98
 
 
 Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
-dm-0             0.00      0.00     0.00   0.00    0.00     0.00   14.20     68.80     0.00   0.00    9.13     4.85    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.13   3.36
 mmcblk0          0.40     51.20     0.00   0.00    6.50   128.00    8.60     88.00     9.60  52.75    8.70    10.23    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.08   3.92
 
 
 Device            r/s     rkB/s   rrqm/s  %rrqm r_await rareq-sz     w/s     wkB/s   wrqm/s  %wrqm w_await wareq-sz     d/s     dkB/s   drqm/s  %drqm d_await dareq-sz     f/s f_await  aqu-sz  %util
-dm-0             0.00      0.00     0.00   0.00    0.00     0.00   14.00     68.00     0.00   0.00    6.17     4.86    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.09   3.04
 mmcblk0          0.20     25.60     0.00   0.00    7.00   128.00   10.00     92.80     8.40  45.65    7.20     9.28    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.07   4.00
 
 
